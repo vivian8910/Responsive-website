@@ -734,17 +734,18 @@ h2 {
   }
 }
 
-.promo .bg-primary {
-  text-align: left;
-  padding-left: 7%;
-  padding-top: 7.5em;
-  padding-bottom: 7.5em;
-}
-
-.promo .img-box {
-  background: url(../img/phone-in-hand.jpg);
-  background-size: cover;
-  background-position: center;
+@media (min-width: 725px) {
+  .promo .bg-primary {
+    text-align: left;
+    padding-left: 7%;
+    padding-top: 7.5em;
+    padding-bottom: 7.5em;
+  }
+  .promo .img-box {
+    background: url(../img/phone-in-hand.jpg);
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 footer {
@@ -784,19 +785,30 @@ footer a {
   margin: .7em 0;
 }
 
+.social-links i:hover {
+  cursor: pointer;
+  background: none;
+  color: #d9d9d9;
+}
+
 .nav-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  position: relative;
   margin: 0 auto;
 }
 
 .nav-footer a {
   text-decoration: none;
   font-weight: 700;
+}
+
+.nav-footer a:hover {
+  background: none;
+  color: #d9d9d9;
 }
 
 .container--footer {
@@ -876,6 +888,6 @@ footer a {
     left: 100%;
   }
   .cta .container--cta {
-    width: 50%;
+    width: 70%;
   }
 }
